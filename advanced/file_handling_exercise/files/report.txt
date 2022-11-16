@@ -1,0 +1,10 @@
+.py
+--- directory_traversal.py
+--- even_lines.py
+--- file_manipulator.py
+--- line_numbers.py
+.txt
+--- file.txt
+--- output.txt
+--- report.txt
+--- text.txt

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../SoftUni-Courses/advanced/.idea/advanced.iml" filepath="$PROJECT_DIR$/../SoftUni-Courses/advanced/.idea/advanced.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SoftUni-Courses/fundamentals/.idea/fundamentals.iml" filepath="$PROJECT_DIR$/../SoftUni-Courses/fundamentals/.idea/fundamentals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../oop/.idea/oop.iml" filepath="$PROJECT_DIR$/../oop/.idea/oop.iml" />
+    </modules>
+  </component>
+</project>

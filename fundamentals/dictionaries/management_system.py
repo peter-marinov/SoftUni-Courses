@@ -1,6 +1,6 @@
 from tkinter import *
 import tkinter as tk
-from time import gmtime, strftime, localtime
+from time import strftime, localtime
 from PIL import ImageTk, Image
 from tkinter import messagebox
 
