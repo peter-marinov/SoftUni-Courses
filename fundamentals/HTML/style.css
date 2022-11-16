@@ -1,0 +1,33 @@
+
+.green-text {
+    color: green;
+    font-size: 25px;
+}
+.red-text {
+    color: red;
+    font-size: 25px;
+}
+
+#page-header{
+    font-size: 50px;
+}
+
+div {
+    background-color: orange;
+    color: powderblue
+}
+
+strong {
+    display: block;
+}
+h1 {
+    margin: 0;
+}
+
+h2 {
+    display: inline-block;
+    width: 150px;
+    height: 90px;
+    background-color: cadetblue;
+    margin: 0;
+}

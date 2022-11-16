@@ -1,0 +1,13 @@
+div {
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 100px;
+}

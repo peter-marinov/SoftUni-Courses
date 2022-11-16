@@ -1,0 +1,2 @@
+number = []
+print(number)
