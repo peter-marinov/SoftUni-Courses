@@ -1,0 +1,2 @@
+Function add was called. Result is 4
+Function mult was called. Result is 24
