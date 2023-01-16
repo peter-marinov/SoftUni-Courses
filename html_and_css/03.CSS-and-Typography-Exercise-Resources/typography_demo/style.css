@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+p{
+    /* font-family: 'Roboto', sans-serif; */
+    /* border: 1px solid red;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 5px; */
+    /* text-decoration: line-through; */
+    /* text-indent: 20px; */
+    /* text-transform: capitalize; */
+    /* text-shadow: 2px 4px 10px red; */
+}
+
+p{
+    color: orange;
+    color: #c1f0c3; 
+    color: rgb(255, 0, 0);
+    color: rgba(255, 0, 0, 0.5);
+    cursor: pointer;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    /* background: antiquewhite; */
+    background: linear-gradient(rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.9)), url(./131216Cute-dog-sticking-out-his-tongue-wallpaper-200x200.jpg);
+}

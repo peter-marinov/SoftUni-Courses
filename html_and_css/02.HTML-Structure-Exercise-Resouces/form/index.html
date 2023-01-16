@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms example</h1>
+    <!-- Todo talk about action and method -->
+    
+    <form action="/submit.html" method="post">
+        <div>
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" name="first-name" required placeholder="John"/>
+        </div>
+        
+        <div>
+            <input type="color">
+            <input type="date" disabled>
+        </div>
+
+        <div>
+            <label for="number">input number</label>
+            <input type="number" id="number" name="number" value="9" min="1" max="10"/>
+        </div>
+        
+        <div>
+            <label for="password">Input password</label>
+            <input type="password"  name="password" id="password" placeholder="******"/>
+        </div>
+        
+        <div>
+            <label for="email">Input email</label>
+            <input type="email" id="email" name="email" required value="test@abv.bg"/>
+        </div>
+        
+
+        <div>
+            <input type="checkbox"/>
+            <input type="radio" name="" id=""/>
+            <input type="range" name="" id=""/>
+            <input type="file" name="" id=""/>
+        </div>
+        
+        
+        
+        <div>
+            <p>Select your gender</p>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender"/>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender"/>
+            <label for="genderNA">N/A</label>
+            <input type="radio" id="genderNA" name="gender"/>
+        </div>
+        
+        
+        <div>
+            <!-- Todo clear out data sent -->
+            <p>Select hobbies</p>
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="reading" name="hobbies" value="reading"/>
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="sports" name="hobbies" value="sports"/>
+            <label for="male">Music</label>
+            <input type="checkbox" id="music" name="hobbies" value="music"/>
+        </div>
+
+        <br/>
+        <div>
+            <label for="size">Size:</label>
+            <select name="size" id="size">
+                <option value="39">39 EU</option>
+                <option value="40">40 EU</option>
+                <option value="41.5">41.5 EU</option>
+            </select>
+            <br/>
+            <br/>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        
+        <br/>
+
+
+        <fieldset>
+            <legend>Customer Details</legend>
+            <input type="text" name="fName" id="">
+            <input type="text" name="lName" id="">
+        </fieldset>
+        <fieldset>
+            <legend>Order Details</legend>
+            <input type="text" name="quantity" id="">
+            <textarea name="remarks"></textarea>
+        </fieldset>
+        <br/>
+
+        <!-- Butter is much bettere for usage  -->
+        <input type="submit" value="Send">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

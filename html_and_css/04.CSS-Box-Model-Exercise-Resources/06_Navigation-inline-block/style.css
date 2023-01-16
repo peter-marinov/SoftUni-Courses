@@ -1,0 +1,18 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+ul, li, nav, div {
+    display: inline-block;
+}
+
+a {
+    color: green;
+    padding-right: 18px;
+}
+
+div {
+    font-size: 38px;
+    font-weight: bold;
+    margin-right: 50px;
+}

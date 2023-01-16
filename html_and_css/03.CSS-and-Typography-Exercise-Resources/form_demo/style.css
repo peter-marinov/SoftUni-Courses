@@ -1,0 +1,28 @@
+form{
+    border: 1px solid red;
+    width: 50%;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    width: 70%;
+    padding-left: 20px;
+    margin: auto;
+    margin-bottom: 1.2em;
+}
+
+i{
+    position: relative;
+    left: 23px;
+    top: 2px;
+
+}
+
+.label-ctr{
+    align-items: center;
+    display: flex;
+}
