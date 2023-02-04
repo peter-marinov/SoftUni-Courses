@@ -1,0 +1,22 @@
+body {
+    background-color: lightgray;
+}
+
+body, ul, li {
+    display: flex;
+}
+
+ul {
+    justify-content: space-between;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+li {
+    border: 8px solid black;
+    flex:1 0 25%;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+}

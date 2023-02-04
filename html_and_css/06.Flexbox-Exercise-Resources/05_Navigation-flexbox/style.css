@@ -1,0 +1,41 @@
+body {
+    width: 85vw;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 2px solid rgb(0,0,0);
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline;
+    padding-right: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    color: rgb(0,153,0);
+    text-decoration: none;
+}
+
+header p {
+    font-size: 30px;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    position: absolute;
+    top: 25%;
+    right: 0%;
+}

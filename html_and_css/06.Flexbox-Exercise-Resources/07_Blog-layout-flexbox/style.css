@@ -1,0 +1,75 @@
+div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    width: 80vw;
+    margin: 0 auto;
+    }
+
+main {
+    flex: 1 0 65%;
+}
+
+aside {
+    flex: 1 0 15%;
+}
+
+img {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid black;
+    padding: 5px;
+}
+
+blockquote, h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+header p {
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+#block {
+    display: inline-block;
+    width: 50%;
+}
+
+blockquote {
+    display: inline-block;
+    width: 35%;
+    font-style: italic;
+    border-left: 3px solid gray;
+    font-size: 14px;
+    padding-left: 25px;
+    margin-bottom: 0px;
+    color: gray;
+}
+
+blockquote p:nth-child(2) {
+    text-align: end;
+}
+
+#first-img {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 15%;
+}
+
+#second-img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 15%;
+}

@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+div {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 400px;
+    box-shadow: 1px -1px 23px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px -1px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -1px 23px 0px rgba(0,0,0,0.75);
+}
+
+h1, p {
+    padding-left: 15px;
+}

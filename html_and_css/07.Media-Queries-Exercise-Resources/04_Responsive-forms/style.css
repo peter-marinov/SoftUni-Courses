@@ -1,0 +1,93 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+form {
+    margin: 0 auto;
+    border: 2px solid rgb(148, 138, 138);
+    background-color: rgb(231, 234, 235);
+    position: relative;
+    width: 350px;
+    height: 180px;
+    margin-top: 50px;
+    box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.42);
+    -webkit-box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.42);
+}
+
+form fieldset {
+    border-style: none;
+    border: 2px solid rgb(148, 138, 138);
+    width: 100px;
+    position: absolute;
+    top: -20px;
+    left: -4px;
+    background-color: rgb(248, 249, 250);
+}
+
+form fieldset legend {
+    position: relative;
+    top: 14px;
+}
+
+form p i {
+    position: relative;
+    left: 25px
+}
+
+form p input {
+    padding-left: 24px;
+    height: 20px;
+    width: 200px;
+}
+
+form p {
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+
+form button {
+    border: none;
+    background-color: gray;
+    color: white;
+    height: 24px;
+    width: 60px;
+    margin-left: 10px;
+}
+
+@media (max-width: 450px) {
+    form {
+        width: 200px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    form p input {
+        padding-left: 24px;
+        height: 24px;
+        width: 100px;
+    }
+
+    .password{
+        margin-top: 16px;
+    }
+
+    .password, .username {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
