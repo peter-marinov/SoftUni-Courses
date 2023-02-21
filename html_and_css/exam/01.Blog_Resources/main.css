@@ -1,0 +1,94 @@
+@import url("./reset.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,300&display=swap');
+
+:root {
+    --clr-yellow-bg: #f6e0b5;
+    --clr-brown-bg: #66545e;
+    --clr-dark-text: #7f6b6a;
+    --clr-light-txt: #e4e3e2;
+    --clr-black-border: #000;
+}
+
+body {
+    font-family: "Open Sans";
+    background-color: var(--clr-yellow-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85vw;
+    height: 80%;
+}
+
+.container .card {
+    height: 425px;
+    width: 600px;
+    border: 2px solid var(--clr-black-border);
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 17px 56px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 17px 56px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 17px 56px 0px rgba(0,0,0,0.75);
+}
+
+.container .container-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.card img {
+    height: 350px;
+    width: 100%;
+}
+
+.card .title {
+    color: var(--clr-light-txt);
+    background-color: var(--clr-brown-bg);
+    height: 75px;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 28px;
+}
+
+.navigation {
+    margin-top: 10px;
+    margin-bottom: auto;
+    color: var(--clr-dark-text);
+    font-size: 30px;
+    width: 300px;
+}
+
+.navigation .links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation .link {
+    text-decoration: none;
+    color: var(--clr-dark-text);
+}
+
+.navigation .link i {
+    background-color: var(--clr-dark-text);
+    color: var(--clr-yellow-bg);
+    border-radius: 100%;
+    padding: 2px 3px;
+    font-size: 24px;
+    margin-right: 10px ;
+
+}

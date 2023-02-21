@@ -1,0 +1,90 @@
+@media (max-width: 600px) {
+    .banner  {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .banner h2 {
+        margin: 0 auto;
+        width: 90%;
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .banner p {
+        font-size: 24px;
+    }
+
+    .banner .actions {
+        margin-bottom: 0px;
+    }
+
+    .banner .actions li {
+        width: 90%;
+    }
+
+    .banner .actions li a {
+        width: 100%;
+    }
+
+    .wrapper {
+        padding-bottom: 0px;
+    }
+
+    .wrapper .inner {
+        width: 90%;
+    }
+
+    .wrapper .inner .major {
+        margin-bottom: 20px;
+    }
+    .wrapper .inner .features {
+        flex-direction: column;
+    }
+
+    .wrapper .inner .features .feature {
+        width: 100%;
+    }
+
+    .style2 {
+        padding-top: 40px;
+    }
+
+    .wrapper > .inner.narrow {
+        width: 100%;
+    }
+
+    .style2 .inner .grid-form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        padding: 30px;
+    }
+
+    .style2 .inner .grid-form .form-control {
+        width: 100%;
+    }
+
+    .style2 .inner .grid-form .actions li,
+    .style2 .inner .grid-form .actions li input {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .wrapper.special {
+        padding-top: 30px;
+    }
+
+    .footer::before {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+
+}

@@ -1,0 +1,91 @@
+@import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Mulish:wght@300;400;500;600&family=Poppins:wght@300;400&display=swap');
+
+body {
+    font-family: "Mulish";
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#register-form {
+    background-image: url(./images/form-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 63%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 20px 15px 15px  #888888;
+    padding: 5%;
+}
+
+#register-form input {
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    padding: 18px 48px;
+    margin-top: 8px;
+}
+
+button {
+    background-color: hsl(4deg 55% 44%);
+    color: white;
+    margin: 20px auto 0px auto;
+    width: 45%;
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: pink;
+    color: red;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    margin: 5px;
+}
+
+.form div.form-checkbox {
+    flex-direction: row;
+    justify-content: unset;
+}
+
+.form-checkbox label {
+    margin-top: 8px;
+    margin-left: 4px;
+}
+.form div.form-names {
+    flex-direction: row;
+}
+
+.form div.form-fname,
+.form div.form-lname {
+    width: 50%;
+}
+
+label {
+    font-size: small;
+}
+
+

@@ -1,0 +1,68 @@
+@media (max-width: 600px) {
+    .wrapper header .avatar img {
+        width: 15em;
+    }
+
+    .wrapper header h1 {
+        font-size: 2.75em;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .wrapper header .icons .icon::before{
+        font-size: 2.50em;
+    }
+
+    .wrapper header .icons li:not(:last-of-type) {
+        padding-right: 1.5em;
+    }
+
+    .wrapper header {
+        padding-bottom: 150px;
+    }
+
+    .wrapper main .thumbnails {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 30px;
+        padding: 0px;
+    }
+
+    .wrapper main .thumbnails div {
+        padding: 0;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .wrapper main .thumbnails div a{
+        margin: 0 auto;
+        padding: 0px;
+        /* height: 600px; */
+        /* object-fit: cover; */
+    }
+
+    .wrapper main .thumbnails div a h3 {
+        font-size: 20px;
+    }
+
+    .wrapper main .thumbnails div img {
+        height: 300px
+    }
+
+    .wrapper main .thumbnails {
+        margin-bottom: 50px;
+    }
+
+    footer::before {
+        width: 14em;
+    }
+
+    footer p {
+        font-size: 24px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }
+}

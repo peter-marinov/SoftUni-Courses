@@ -1,0 +1,95 @@
+@import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+:root {
+    --clr-prime: rgb(219, 13, 13);
+}
+
+body {
+    font-family: "Courgette";
+    background-color: #fcf0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container .header {
+    /* border: 1px solid black; */
+    width: 450px;
+    margin-bottom: 50px;
+}
+
+.container .header h1 {
+    font-size: 70px;
+    letter-spacing: 4px;
+    font-weight: 300;
+}
+
+.container .header h2 {
+    text-align: end;
+    font-size: 36px;
+    color: var(--clr-prime)
+} 
+
+.container .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 80vw;
+}
+
+.container .cards .card {
+    width: 450px;
+    height: 525px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.container .cards .card .card-title {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.container .cards .card .card-divider {
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: var(--clr-prime);
+    border: none;
+    height: 1px;
+}
+
+.container .cards .card .card-text {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.container .cards .card .card-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container .cards .card .info-btn {
+    border: none;
+    border-radius: 100%;
+    background-color: var(--clr-prime);
+    cursor: pointer;
+}
+
+.container .cards .card .info-btn i {
+    color: white;
+}

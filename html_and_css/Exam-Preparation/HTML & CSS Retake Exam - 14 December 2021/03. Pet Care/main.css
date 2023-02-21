@@ -1,0 +1,262 @@
+@import url("./reset.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --clr-white: #fff;
+    --clr-blue-txt: #121731;
+    --clr-gray-txt: #bababb;
+    --clr-orange-txt: #ee3b1b;
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins";
+}
+
+p {
+    font-family: "Open Sans";
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 15px auto;
+}
+
+header img {
+    height: 24px;
+}
+
+header .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navigation ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navigation ul li a {
+    text-decoration: none;
+    color: var(--clr-blue-txt);
+}
+
+main #care {
+    position: relative;
+    margin-bottom: 150px;
+}
+
+main #care .care-bg {
+    height: 700px;
+    width: 100%;
+}
+
+
+main #care .care-info {
+    width: 300px;
+    color: var(--clr-white);
+    position: absolute;
+    top: 200px;
+    left: 500px;
+}
+
+main #care .care-info h1 {
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 5px;
+}
+
+main #care .care-info h1.light {
+    font-weight: 300;
+}
+
+main #care .care-info p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.btn {
+    padding: 10px 30px;
+    border: none;
+    color: var(--clr-orange-txt);
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+main #care .care-dog {
+    position: absolute;
+    top: 40px;
+    right: 300px;
+}
+
+main #services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+main #services h2 {
+    font-size: 36px;
+}
+
+main #services > p {
+    text-align: center;
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+main #services .cards {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    width: 50%;
+    gap: 20px;
+}
+
+main #services .cards .card {
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    position: relative;
+    padding: 30px 15px;
+    flex-direction: column;
+
+}
+
+main #services .cards .card img {
+    margin: 0 auto;
+}
+
+main #services .cards .card .card-absolute {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%,0);
+    
+}
+
+main #services .cards .card h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+main #pet {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    height: 400px;
+}
+
+main #pet .info {
+    width: 50%;
+    padding-top: 80px;
+}
+
+main #pet .info h2 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+main #pet .info h2.light {
+    font-weight: 300;
+}
+
+main #pet .info p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main #pet .info .btn {
+    color: var(--clr-white);
+    background-color: var(--clr-orange-txt);
+}
+
+
+main #why {
+    position: relative;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+main #why img {
+    width: 100%;
+    height: 100%;
+}
+
+
+main #why .why-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--clr-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 450px;
+}
+
+main #why .why-info h2 {
+    font-size: 36px;
+}
+
+main #why .why-info .why-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main #why .why-info .why-contacts p span {
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+footer .navigation ul{
+    margin-top: 20px;
+}
+
+footer .navigation img {
+    height: 28px;
+}
+
+footer .navigation h3 {
+    color: var(--clr-blue-txt);
+}
+
+footer .navigation ul li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+footer .navigation ul li, 
+footer .navigation ul li a {
+    color: gray;
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+}

@@ -1,0 +1,245 @@
+@import url("./reset.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400&family=Open+Sans:wght@300;400;500&display=swap');
+
+:root {
+    --clr-white: #fff;
+    --clr-blue-headline: #54547d;
+    --clr-dark-purple-bg: #54546d;
+    --clr-purple-btn-bg: #9a5dc6;
+    --clr-green-dark: #039b3d;
+    --clr-green-light: #4cd780;
+    --clr-blue-dark: #4c6c88;
+    --clr-blue-light: #629acf;
+    --clr-purple-dark: #4b38a6;
+    --clr-purple-light: #8d7ee2;
+    --clr-gray-dark: #e6e6e6;
+    --clr-gray-light: #f8f8f8;
+    --clr-gray-border: #adadb6;
+    --clr-footer-bg: #54546d;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat";
+}
+
+p {
+    font-family: "Lato";
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 80vw;
+    margin: 25px auto;
+}
+
+#header .header-nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+#header .header-nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--clr-blue-headline);
+    font-family: "Montserrat";
+}
+
+#taxes {
+    background-color: var(--clr-blue-headline);
+    height: 350px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    position: relative;
+    margin-bottom: 300px;
+}
+
+#taxes > h1 {
+    text-align: center;
+    color: var(--clr-white);
+    letter-spacing: 1px;
+}
+
+#taxes img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -75px;
+    height: 60%;
+}
+
+#taxes .cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#taxes .cards .card {
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    
+}
+
+#taxes .cards .card .card-top {
+    background-color: var(--clr-white);
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#taxes .cards .card .card-bottom {
+    background-color: gray;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+} 
+
+#taxes .cards .card .card-top h2 {
+    font-size: 24px;
+}
+
+#taxes .cards .card p {
+    font-size: 20px;
+}
+
+#taxes .cards .design-basics .card-top a {
+    text-decoration: none;
+    background-color: var(--clr-purple-btn-bg);
+    color: var(--clr-white);
+    padding: 12px 35px;
+    border-radius: 25px;
+    margin-top: 70px;
+}
+
+#taxes .cards .design-basics .card-bottom {
+    flex-direction: column;
+    color: var(--clr-white);
+    background: linear-gradient(90deg, var(--clr-green-dark) 0%, var(--clr-green-light) 80%);
+}
+
+#taxes .cards .fundamentals-program .card-top h2,
+#taxes .cards .professional-program .card-top h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#taxes .cards .fundamentals-program .card-bottom {
+    background: linear-gradient(90deg, var(--clr-blue-dark) 0%, var(--clr-blue-light) 80%);
+    color: var(--clr-white);
+}
+
+#taxes .cards .professional-program .card-bottom {
+    background: linear-gradient(90deg, var(--clr-purple-dark) 0%, var(--clr-purple-light) 80%);
+    color: var(--clr-white);
+}
+
+#taxes .cards .card-bottom .divider {
+    height: 90px;
+}
+
+#taxes .cards .fundamentals-program .card-bottom, 
+#taxes .cards .professional-program .card-bottom {
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#taxes::before {
+    margin-bottom: 3200px;
+}
+
+#education {
+    width: 55%;
+    margin: 0 auto;
+    padding: 60px 0px;
+}
+
+#education h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#education p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+#education table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#education table tr {
+    
+}
+
+#education table tr:nth-of-type(2n+1) {
+    background-color: var(--clr-gray-dark);
+}
+
+#education table tr:nth-of-type(2n) {
+    background-color: var(--clr-gray-light);
+}
+
+
+#education table tr th {
+    text-align: start;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#education table tr th img {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#finance {
+    width: 65vw;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+#finance .finance-info {
+    width: 70%;
+}
+
+#finance .finance-info h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#finance .finance-info > p {
+    margin-bottom: 20px;
+}
+
+#footer {
+    background-color: var(--clr-footer-bg);
+    margin-top: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-gray-dark);
+}

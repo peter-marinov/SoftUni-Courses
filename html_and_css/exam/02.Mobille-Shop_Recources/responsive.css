@@ -1,0 +1,176 @@
+@media (max-width: 600px) {
+    .home-left,
+    .home-right,
+    .home-container01  {
+        display: none;
+    }
+
+    /* .home-navbar ,
+    .section-container{
+        background-color: #bbd7b4;
+    } */
+
+    .navbar-logo-title {
+        margin: 0px;
+        font-size: 34px;
+    }
+
+    .home-main {
+        margin-top: 2px;
+        padding-bottom: 50px;
+    }
+
+    .section-container {
+        padding-top: 48px;
+    }
+
+    .home-hero1 {
+        flex-direction: column;
+    }
+
+    .home-info,
+    .home-container04,
+    .home-btn-group {
+        justify-content: center;
+    }
+
+    .home-text12 {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .Heading-2 {
+        font-size: 34px;
+    }
+
+    .section-heading-text1 {
+        font-size: 20px;
+    }
+
+    .category-card-category-card {
+        /* max-width: 260px;
+        max-height: 310px; */
+        max-width: 45%;
+    }
+
+    .category-card-image {
+        width: 260px;
+        height: 260px;
+    }
+
+    .category-card-category-card {
+        font-size: 22px;
+    }
+
+    .home-cards-container {
+        grid-gap: 20px;
+    }
+
+    .Heading-3 {
+        font-size: 30px;
+    }
+
+    .home-container05 {
+        padding: 15px 60px;
+        width: unset;
+        height: unset;
+    }
+
+    .home-container05 span:last-of-type {
+        font-size: 18px;
+    }
+
+    .home-text23 {
+        font-size: 18px;
+    }
+
+    .section-container {
+        flex-direction: column;
+    }
+
+    .home-left4 {
+        padding: 40px 0px;
+    }
+
+    .home-text29 {
+        font-size: 34px;
+    }
+
+    .home-text30 {
+        width: unset;
+        font-size: 18px;
+    }
+
+    .home-text31 {
+        font-size: 18px;
+    }
+
+    .home-image6 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .home-container08 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .blog-post-card-blog-post-card {
+        max-width: unset;
+    }
+
+    .blog-post-card-text {
+        font-size: 28px;
+    }
+
+    .blog-post-card-text1 {
+        font-size: 18px;
+    }
+
+    .button {
+        font-size: 18px;
+    }
+
+    .home-footer1 {
+        flex-direction: column-reverse;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    .home-links-container {
+        flex-direction: column;
+    }
+
+    .home-text38, .home-text45, .home-text51 {
+        font-size: 24px;
+    }
+
+    .home-text39, 
+    .home-text40, 
+    .home-text41, 
+    .home-text42, 
+    .home-text43, 
+    .home-text44, 
+    .home-text46, 
+    .home-text47, 
+    .home-text48, 
+    .home-text49, 
+    .home-text50, 
+    .home-text52, 
+    .home-text53, 
+    .home-text54, 
+    .home-text55 {
+        font-size: 20px;
+    }
+
+    .home-container09 {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .home-text33 {
+        font-size: 20px;
+    }
+}

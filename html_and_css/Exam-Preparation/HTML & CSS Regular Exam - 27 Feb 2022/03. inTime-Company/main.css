@@ -1,0 +1,263 @@
+@import url("./reset.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+:root {
+    --clr-hdr-logo: #2ba6b8;
+    --clr-bg-1: #ffffff;
+    --clr-bg-2: #eef0f1;
+    --clr-bg-3: #393f43;
+    --clr-bg-4: #2f3539;
+    --clr-bg-5: #262b2f;
+    --clr-dark-txt: #454545;
+    --clr-white-text: #f0eff0;
+    --clr-divider: #51bccd;
+    --clr-light-blue-button: #6bbfff;
+    --clr-dark-blue-button: #008cba;
+    --clr-mail-bg: #545a5e;
+}
+
+body {
+    font-family: "Helvetica";
+    color: var(--clr-dark-txt);
+}
+
+header .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--clr-bg-1);
+}
+
+header .navigation h1 {
+    font-weight: 300;
+}
+
+header .navigation h1 span {
+    color: var(--clr-hdr-logo);
+}
+
+header .navigation ul {
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navigation ul li a {
+    text-decoration: none;
+}
+
+header .navigation ul li .divider {
+    border: 2px solid var(--clr-divider);
+    margin: 0px;
+}
+
+header .promote {
+    position: relative;
+}
+
+header .promote img {
+    width: 100%;
+}
+
+header .promote .promote-info {
+    width: 700px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 270px;
+    left: 220px;
+    padding:20px;
+}
+
+header .promote .promote-info h1 {
+    color: var(--clr-white-text);
+    font-size: 60px;
+    font-weight: 300;
+}
+
+header .promote .promote-btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: var(--clr-dark-blue-button);
+    color: var(--clr-white-text);
+    font-size: 24px;
+    padding: 5px 25px;
+    border-radius: 50px;
+    border: none;
+}
+
+main #company {
+    padding-top: 30px;
+    text-align: center;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+main #company .company-title {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+main #company .company-divider {
+    border: 2px solid var(--clr-divider);
+    width: 100px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+main #company p {
+    font-size: 18px;
+}
+
+main #company .company-btn {
+    margin-top: 15px;
+    background-color: var(--clr-dark-txt);
+    color: var(--clr-white-text);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+main #services {
+    background-color: var(--clr-bg-2);
+    padding-bottom: 15px;
+}
+
+main #services h2 {
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+main #services .divider {
+    border: 2px solid var(--clr-dark-txt);
+    width: 100px;
+    margin-top: 0px;
+}
+
+main #services .cards {
+    display: flex;
+    width: 60vw;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px auto;
+    gap: 30px;
+}
+
+main #services .cards .card {
+    background-color: var(--clr-bg-1);
+}
+
+main #services .cards .card .card-info h3{
+    margin-top: 30px;
+}
+
+main #services .cards .card .card-info p {
+    padding: 10px 20px;
+}
+
+main #services .cards .card .card-info .btn {
+    background-color: var(--clr-dark-txt);
+    color: var(--clr-white-text);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+button {
+    cursor: pointer;
+}
+
+main #subscribe {
+    background-color: var(--clr-bg-3);
+    color: var(--clr-white-text);
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+    text-align: center;
+}
+
+main #subscribe h2 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+main #subscribe .divider {
+    border: 2px solid var(--clr-white-text);
+    width: 100px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+main #subscribe .form {
+    margin-top: 15px;
+}
+
+main #subscribe .form input {
+    width: 450px;
+    padding: 5px 5px;
+    background-color: var(--clr-mail-bg);
+    border: none;
+    border-radius: 5px;
+}
+
+main #subscribe .form .btn {
+    margin-left: 5px;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    background-color: var(--clr-light-blue-button);
+    color: var(--clr-white-text);
+}
+
+main #about {
+    background-color: var(--clr-bg-4);
+    color: var(--clr-white-text);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+main #about p{
+    margin-bottom: 10px;
+}
+
+main #about li {
+    margin-bottom: 5px;
+}
+
+main #about a {
+    text-decoration: none;
+    color: var(--clr-white-text);
+}
+
+main #about .follow .icons {
+    display: flex;
+    gap: 15px;
+}
+
+main #about .follow .icons i {
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: var(--clr-bg-5);
+    padding: 5px;
+    color: var(--clr-white-text);
+    text-align: center;
+    font-size: 12px;
+}
+
+footer p span {
+    color: var(--clr-hdr-logo);
+}

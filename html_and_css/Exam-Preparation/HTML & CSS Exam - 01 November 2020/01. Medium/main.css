@@ -1,0 +1,69 @@
+@import url("./reset.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Georgia";
+    color: var(--clr-black-headlines);
+}
+
+p, button {
+    font-family: "Helvetica";
+    color: var(--clr-grey-txt);
+}
+
+:root {
+    --clr-white: #fff;
+    --clr-green-btn: #03a87c;
+    --clr-green-highlite: #cefde9;
+    --clr-black-headlines: #292929;
+    --clr-grey-txt: #757575;
+    --clr-grey-divider: #d2d2d2;
+}
+
+.container {
+    margin: 40px auto;
+    width: 42vw;
+}
+
+.container .container-header h1 {
+    font-size: 47px;
+}
+
+.container .container-bottom {
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.container .container-bottom .left,
+.container .container-bottom .right {
+    width: 50%;
+}
+
+.container .container-bottom .left button {
+    background-color: var(--clr-green-btn);
+    color: var(--clr-white);
+    border: none;
+    padding: 5px 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container .container-bottom .right .right-header {
+    font-weight: bold;
+    color: var(--clr-black-headlines);
+    margin-bottom: 30px;
+}
+
+.container .container-bottom .right .highlite {
+    background-color: var(--clr-green-highlite);
+}
+
+.container .divider {
+    margin-top: 60px;
+    border-color: var(--clr-grey-divider);
+    width: 300px;
+    
+}
+

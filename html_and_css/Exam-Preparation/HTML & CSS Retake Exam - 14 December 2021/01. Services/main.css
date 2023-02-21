@@ -1,0 +1,65 @@
+@import url("./reset.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --clr-black-txt: #1e1e1e;
+    --clr-white-txt: #fff;
+    --clr-green-btn-bg: #a4c639;
+    --clr-gray-card-bg: #f7f7f7;
+}
+
+body {
+    font-family: "Poppins";
+}
+
+.container h1 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container h1 span {
+    color: var(--clr-green-btn-bg);
+}
+
+.container > p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container .cards {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    margin: 80px auto;
+    gap: 20px;
+}
+
+.container .cards .card {
+    background-color: var(--clr-gray-card-bg);
+}
+
+.container .cards .card .card-img {
+    width: 100%;
+}
+
+.container .cards .card .card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container .cards .card .card-info h3 {
+    font-weight: bold;
+}
+
+.container .cards .card .card-info .btn {
+    background-color: var(--clr-green-btn-bg);
+    color: var(--clr-white-txt);
+    width: 40%;
+    padding: 5px 0px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}

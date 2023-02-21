@@ -1,0 +1,220 @@
+@import url("./reset.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root {
+    --clr-white: #fff;
+    --clr-green-check: #00d08e;
+    --clr-green-footer: #b2f1dd;
+    --clr-green-txt: #38d392;
+    --clr-dark-txt: #20252d;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "PT Sans";
+    width: 80vw;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),url(./image/computer-main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    
+}
+
+header .top {
+    padding-left: 250px;
+    padding-right: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+
+header .top .top-right,
+header .top .top-left,
+header .title,
+header p,
+header .btn {
+    color: var(--clr-white);
+}
+header .top .top-right,
+header .top .top-left {
+    font-size: 18px;
+}
+
+header .title {
+    font-size: 68px;
+    margin-bottom: 30px;
+}
+
+header .top p {
+    cursor: pointer;
+}
+
+header > p {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    width: 350px;
+}
+
+header .btn {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    background-color: var(--clr-green-check);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header > p i {
+    background-color: var(--clr-white);
+    color: var(--clr-dark-txt);
+    border-radius: 100%;
+    font-size: 12px;
+    padding: 1px;
+    margin-left: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .block {
+    width: 50%;
+    /* height: 350px; */
+    object-fit :cover;
+}
+
+main .block.Hustle-Case .Hustle-Case-inside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75px;
+    margin-right: 50px;
+}
+
+main .block.Hustle-Case h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+main .block.Hustle-Case .Hustle-Case-inside div {
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+main .block.Hustle-Case .Hustle-Case-inside div img {
+    display: flex;
+    
+    width: 50%;
+}
+
+main .block.Hustle-Case .Hustle-Case-inside div p {
+    /* text-align: center; */
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--clr-green-txt);
+}
+
+main .pen img,
+main .tablet img {
+    width: 100%;
+}
+
+main .hustle-what > * {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+main .hustle-what h2 {
+    margin-top: 25px;
+    font-size: 40px;
+}
+
+main .hustle-what p {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+main .hustle-what ul li i {
+    background-color: var(--clr-green-check);
+    border-radius: 100%;
+    color: var(--clr-white);
+    padding: 1px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+main .hustle-what ul li {
+    font-size: 24px;
+}
+
+footer {
+    background-color: var(--clr-green-footer);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    gap: 50px;
+}
+
+footer h2 {
+    font-size: 40px;
+}
+
+footer .questions {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+}
+
+footer .questions .question {
+    text-align: center;
+}
+
+footer .questions .question .title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+footer .questions .question p {
+    font-size: 20px;
+}
+
+footer > p {
+    font-size: 20px;
+    position: relative;
+    top: -50px;
+}
+
+footer > p a {
+    text-decoration: none;
+    color: var(--clr-dark-txt);
+    font-weight: bold;
+}
