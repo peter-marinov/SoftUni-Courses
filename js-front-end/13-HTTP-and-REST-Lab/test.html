@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Test</h1>
+    <script>
+        // console.log('First Hello!');
+        // setTimeout(() => {
+        //     console.log('Second Hello!');
+        // }, 2000);
+        // setInterval(() => {
+        //     console.log('Fourth Hello!');
+        // }, 2000);
+        // console.log('Third Hello!');
+
+        // new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         resolve({id: 1, name: 'Kiril'})
+        //     }, 2000);
+        // }).then((res) => {
+        //     console.log(res);
+        // });
+
+        // new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         reject('Something went wrong')
+        //     }, 2000);
+        // }).then((res) => {
+        //     console.log(res);
+        // })
+        //     .catch((err) => {
+        //         console.error(err)
+        //     })
+
+        new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve({id: 1, name: 'Kiril'})
+            }, 2000);
+        }).then((res) => {
+            console.log(res);
+        })
+        .catch((err) => {
+            console.error(err);
+        })
+            .finally(() => { 
+                console.log('Goes here anyway!')
+        })
+    </script>
+</body>
+</html>

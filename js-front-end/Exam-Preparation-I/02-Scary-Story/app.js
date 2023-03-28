@@ -117,5 +117,3 @@ function solve() {
     return htmlElement;
   }
 }
-
-
