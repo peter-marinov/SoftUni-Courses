@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Person details</h1>
+
+    <h2>User: {{ person.first_name }}</h2>
+    <div>Status: {{ person.level }}</div>
+    <div>Born in {{ person.born_in }}</div>
+    <div>{{ person.age }} years old</div>
+    <div>City: {{ person.city }}</div>
+    <p>{{ person.pk }}</p>
+
+    <div>
+        <a href="{% url 'index' %}">Back to home page</a>
+        <a href="{% url 'remove person' pk=person.pk name=person.first_name%}">Remove person from DB</a>
+    </div>
+
+</body>
+</html>

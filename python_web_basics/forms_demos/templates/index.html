@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Forms
+{% endblock %}
+
+
+{% block content %}
+    <h2>
+        {% if name %}
+            Hello, {{ name }}! Nice to see you!
+        {% else %}
+            Please, enter your name!
+        {% endif %}
+    </h2>
+    {{ csrf_token }}
+    <h3>Default form</h3>
+    <form action="{% url 'index' %}" method="post">
+        {{ form.as_div }}
+        <input type="range"/>
+        {% csrf_token %}
+        <button>Send form</button>
+    </form>
+
+    <h3>Customized form</h3>
+    <form action="{% url 'index' %}" method="post">
+        {% for field in form %}
+            <label for="{{ field.id_for_label }}">
+                <strong>{{ field.label }}</strong>
+                {{ field }}
+            </label>
+
+        {% endfor %}
+        <input type="range"/>
+        {% csrf_token %}
+        <button>Send form</button>
+    </form>
+{% endblock %}

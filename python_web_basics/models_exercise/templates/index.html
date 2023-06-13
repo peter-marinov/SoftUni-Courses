@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div style="display:flex; justify-content:space-between; margin:30px">
+    <ul>
+        <h1>People</h1>
+        {% for person in people %}
+            <li> User: {{ person.first_name }}</li>
+            <div>Status: {{ person.level }}</div>
+            <div>Born in {{ person.born_in }}</div>
+            <div>{{ person.age }} years old</div>
+            <div>City: {{ person.city }}</div>
+            <a href="{% url 'person details' pk=person.pk name=person.first_name %}">User details</a>
+            <p></p>
+        {% endfor %}
+    </ul>
+
+
+    <ul>
+        <h1>Filtered people</h1>
+        {% for person in filtered_people %}
+            <li> User: {{ person.first_name }}</li>
+            <div>Born in {{ person.born_in }}</div>
+            <div>Status: {{ person.level }}</div>
+            <div>{{ person.age }} years old</div>
+            <div>City: {{ person.city }}</div>
+
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
