@@ -1,0 +1,18 @@
+{% extends 'home-page.html' %}
+{% block content %}
+    <!-- edit plant form -->
+    <section id="create-page" class="auth">
+        <form id="create" method="POST" action="{% url 'edit plant' pk=plant.pk %}">
+            <div class="container">
+                <h1>Edit Plant</h1>
+
+                {{ form }}
+
+                <input class="btn submit" type="submit" value="Edit Plant">
+                {% csrf_token %}
+            </div>
+        </form>
+    </section>
+
+{% endblock %}
+

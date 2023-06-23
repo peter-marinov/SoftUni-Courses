@@ -1,0 +1,15 @@
+{% extends 'base/base.html' %}
+{% block content %}
+
+    <h1>Enter your data</h1>
+    <!-- Profile Create Form -->
+    <div class="form">
+        <form method="POST" action="{% url 'create profile' %}" enctype="multipart/form-data">
+            {{ form }}
+            {% csrf_token %}
+            <!-- Profile Create Button -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <!-- End Profile Create Form -->
+{% endblock %}
