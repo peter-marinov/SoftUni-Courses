@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>List of people</h1>
+    <form action="{% url 'list_person' %}" method="GET">
+        <label for="">
+            <input name="pattern" placeholder="Search for .." value="{{ pattern|default_if_none:"" }}">
+        </label>
+        <button>Search</button>
+        {% csrf_token %}
+    </form>
+    <ul>
+    {{ object_list }}
+        {% for person in object_list %}
+            <li>{{ person.username }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

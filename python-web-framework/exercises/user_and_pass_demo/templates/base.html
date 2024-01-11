@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+<ul>
+    {% if request.user.is_authenticated %}
+        <a href="">{{ request.user.profile.first_name }}</a>
+        <li>
+            <a href="{% url 'logout_user' %}">Logout</a>
+        </li>
+    {% else %}
+        <li>
+            <a href="{% url 'login_user' %}">Login</a>
+        </li>
+        <li>
+            <a href="{% url 'register_user' %}">Register</a>
+        </li>
+    {% endif %}
+</ul>
+<h1>{{ request.user }}</h1>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>List of articles</h1>
+    <ul>
+        {% for article in object_list %}
+            <li>
+                Name: {{ article.title }}
+                Info: {{ article.info }}
+                <p>
+                    {{ article.get_absolute_url }}
+                </p>
+                <div>
+                    <a href="{% url 'detail_view' pk=article.pk %}">Link to Article ID {{ article.pk }}</a>
+                </div>
+
+            </li>
+        {% endfor %}
+    </ul>
+
+    <div>
+        <a href="{% url 'create_view' %}">Create Article</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>{{ title }}</h1>
+From CBV
+
+<form method="GET" action="{% url 'index' %}">
+    <label for="">
+        <input name="pattern" placeholder="Enter text:" value="{{ pattern }}">
+    </label>
+    <button>
+        Search
+    </button>
+    {% csrf_token %}
+</form>
+
+<a href="{% url 'employee create' %}">Create new employee</a>
+
+<ul>
+    {% for employee in employees %}
+        <li>
+            <a href="{% url 'employee details' pk=employee.pk %}">
+                {{ employee.full_name }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+
+{#<ul>#}
+{#    {% for employee in object_list %}#}
+{#        <li>{{ employee.full_name }}</li>#}
+{#    {% endfor %}#}
+{#</ul>#}
+</body>
+</html>
