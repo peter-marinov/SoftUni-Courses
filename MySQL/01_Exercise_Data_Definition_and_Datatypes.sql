@@ -18,7 +18,7 @@ CREATE TABLE towns(
 /* 02. Alter Minions Table */ 
 ALTER TABLE towns
 RENAME COLUMN town_id TO id;
-
+-- below is for Judge
 ALTER TABLE minions
 ADD COLUMN town_id INT;
 
