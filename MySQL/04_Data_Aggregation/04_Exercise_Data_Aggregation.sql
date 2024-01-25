@@ -127,6 +127,25 @@ FROM employees
 WHERE salary > 30000 and manager_id != 42
 GROUP BY department_id
 ORDER BY department_id;
+
+-- other solution
+CREATE TABLE highest_paid_employees AS
+SELECT * FROM employees
+WHERE salary > 30000;
+
+DELETE FROM highest_paid_employees
+WHERE manager_id = 42;
+
+UPDATE highest_paid_employees
+SET salary = salary + 5000
+WHERE department_id = 1;
+
+SELECT
+	department_id,
+	AVG(salary) AS 'avg_salary'
+FROM highest_paid_employees
+GROUP BY department_id
+ORDER BY department_id;
 -- END
 
 /* 14. Employees Maximum Salaries */
@@ -137,7 +156,6 @@ FROM employees
 GROUP BY department_id
 HAVING `max_salary` NOT BETWEEN 30000 AND 70000
 ORDER BY department_id;
-
 -- END
 
 /* 15. Employees Count Salaries */
@@ -147,20 +165,32 @@ WHERE manager_id IS NULL;
 -- END
 
 /* 16. 3rd Highest Salary */
-
-SELECT * FROM employees;
-
+SELECT 
+	e.department_id,
+    (
+		SELECT DISTINCT salary
+		FROM employees
+		WHERE e.department_id = department_id
+		ORDER BY salary DESC
+		LIMIT 1 OFFSET 2 -- OFFSET skip number of lines
+    ) AS 'third_highest_salary'
+FROM employees AS e
+GROUP BY e.department_id
+HAVING `third_highest_salary` IS NOT NULL
+ORDER BY e.department_id;
 -- END
 
 /* 17. Salary Challenge */
 SELECT
-	first_name,
-    last_name,
-    department_id,
-    AVG(salary)
-FROM employees
-WHERE salary > AVG(salary)
-GROUP BY department_id
+	e.first_name,
+    e.last_name,
+    e.department_id
+FROM employees e
+WHERE salary > (SELECT AVG(salary)
+				FROM employees
+                WHERE e.department_id = department_id
+                )
+-- GROUP BY department_id
 ORDER BY department_id, employee_id
 LIMIT 10;
 -- END
@@ -172,10 +202,4 @@ SELECT
 FROM employees
 GROUP BY department_id
 ORDER BY department_id;
--- END
-
-/* */
--- END
-
-/* */
 -- END
